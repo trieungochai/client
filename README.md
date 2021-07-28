@@ -1,6 +1,9 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# App Challenges
+- Need to be able to navigate around to seperate pages in our app.
+- Need to allow a user to login/logout.
+- Need to handle forms in Redux.
+- Need to master CRUD operations in React/Redux.
+- Errors will likely occur! Need good error handling.
 
 ## Available Scripts
 
