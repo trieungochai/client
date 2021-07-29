@@ -1,11 +1,11 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Link, Route } from "react-router-dom";
 
 const PageOne = () => {
   return (
     <div>
       <p>Page 1</p>
-      <a href="/pagetwo">Navigate to Page 2</a>
+      <Link to="/pagetwo">Navigate to Page 2</Link>
     </div>
   );
 };
@@ -14,7 +14,7 @@ const PageTwo = () => {
   return (
     <div>
       <p>Page 2</p>
-      <a href="/">Navigate to Page 1</a>
+      <Link to="/">Navigate to Page 1</Link>
     </div>
   );
 };
