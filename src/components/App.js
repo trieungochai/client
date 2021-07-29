@@ -2,11 +2,21 @@ import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 
 const PageOne = () => {
-  return <p>Page 1</p>;
+  return (
+    <div>
+      <p>Page 1</p>
+      <a href="/pagetwo">Navigate to Page 2</a>
+    </div>
+  );
 };
 
 const PageTwo = () => {
-  return <p>Page 2</p>;
+  return (
+    <div>
+      <p>Page 2</p>
+      <a href="/">Navigate to Page 1</a>
+    </div>
+  );
 };
 
 const App = () => {
