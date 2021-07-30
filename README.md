@@ -1,13 +1,16 @@
-# App Challenges
+## App Challenges
 - Need to be able to navigate around to seperate pages in our app.
 - Need to allow a user to login/logout.
 - Need to handle forms in Redux.
 - Need to master CRUD operations in React/Redux.
 - Errors will likely occur! Need good error handling.
 
-## Available Scripts
-
-In the project directory, you can run:
+## Steps for Setting Up OAuth
+- Create a new project at console.developers.google.com/
+- Set up an OAuth confirmation screen.
+- Generate an OAuth Client ID.
+- Install Google's API library, initialize it with the OAuth Client ID.
+- Make sure the lib gets called any time the use clicks on the 'Login with Google' button.
 
 ### `yarn start`
 
