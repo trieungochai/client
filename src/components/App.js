@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Link, Route } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 // Different Router Types
 // https://www.udemy.com/course/react-redux/learn/lecture/12700551#overview
 
