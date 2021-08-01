@@ -12,13 +12,23 @@
 - Install Google's API library, initialize it with the OAuth Client ID.
 - Make sure the lib gets called any time the use clicks on the 'Login with Google' button.
 
-### `yarn start`
+### Important Note about Redux Form Installation
+We will be installing Redux Form into our application.
+If you're using the latest Node v15 and npm v7 releases, this will fail with the following error:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`code ERESOLVE`
+`npm ERR! ERESOLVE unable to resolve dependency tree`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This is caused by some fairly significant breaking changes NPM is making, which can read about here:
+https://blog.npmjs.org/post/626173315965468672/npm-v7-series-beta-release-and-semver-majory
+
+If you are using NPM, you'll need to run this command instead:
+`npm install redux-form --legacy-peer-deps`
+
+If you are using Yarn, no further changes will be needed and you can install as you would typically:
+`yarn add redux-form`
+
+Note - Do not mix the use of yarn and npm in the same project, this will cause some serious dependency conflicts.
 
 ### `yarn test`
 
