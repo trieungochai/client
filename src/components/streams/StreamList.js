@@ -36,7 +36,7 @@ class StreamList extends React.Component {
   }
 
   renderCreate = () => {
-    console.log(this.props);
+    // console.log(this.props);
     if (this.props.isSignedIn) {
       return (
         <div style={{ textAlign: "right" }}>
@@ -49,7 +49,7 @@ class StreamList extends React.Component {
   };
 
   render() {
-    console.log(this.props);
+    // console.log(this.props);
     return (
       <div>
         <h2>Streams</h2>
@@ -61,7 +61,7 @@ class StreamList extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log({ state });
+  // console.log({ state });
   return {
     streams: Object.values(state.streams),
     currentUserId: state.auth.userId,
