@@ -33,3 +33,13 @@ Note - Do not mix the use of yarn and npm in the same project, this will cause s
 ### Component Isolation with React-Router
 With React-Router, each component needs to be designed to work in isolation (fetch its own data).
 https://github.com/trieungochai/stream_client/commit/545420eff24cc0ba0d61c3a3c0b03b2d5086b415
+
+### RTMP NodeMediaServer is not a constructor error fix
+We will install the Node Media Server package and create our RTMP server.
+Our index.js needs a slight modification to the import for v.2.1.0
+https://github.com/illuspas/Node-Media-Server#npm-version-recommended
+
+Instead of:
+`const { NodeMediaServer } = require('node-media-server');`
+We need to change the import to this:
+`const NodeMediaServer = require('node-media-server');`
